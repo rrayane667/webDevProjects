@@ -1,0 +1,90 @@
+:root{
+    --bg-crd : white;
+    --bg-clr: #f9fafc;
+    --txt-clr: rgb(74, 74, 74);
+}
+body{
+    margin: 0;
+    height: 100vh;
+    background: var(--bg-clr);
+    font-family:sans-serif;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.photo{
+    flex: 1 3 fit-content;
+    background-color: var(--bg-clr);
+    border-radius: 10px;
+    margin: 5px 0 5px 5px;
+    overflow: hidden;
+    max-width: fit-content;
+    box-shadow: 1px 1px 20px #8e602b;
+    z-index: 1;
+}
+.main-panel{
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-clr);
+
+}
+.card{
+    flex: 1 1 30%;
+    box-shadow: 1px 0.01px 3px rgb(61, 61, 61);
+    background-color: var(--bg-crd);
+    margin: 10px;
+    border-radius: 10px;
+    font-size: small;
+    color:var(--txt-clr);
+    
+}
+form{
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.leftCard, .rightCard, .frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.frame{
+    width: min(100%, 500px);
+    padding: 10px;
+}
+.txt, .lt7t{
+    flex: 1 1 5%;
+}
+.txt{
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    padding-left: 100px;
+    color: var(--txt-clr);
+}
+input{
+    height: 25px;
+    border-radius: 3px;
+    border: solid 1px #8e602b;
+    background-color: var(--bg-clr);
+}
+.space{
+    flex:1 5 0;
+    max-width: 80px;
+}
+.bouton{
+    position: absolute;
+    bottom: 15%;
+    margin-left: 100px;
+}
+button{
+    height: 30px;
+    width: 150px;
+    background-color: #8e602b;
+    border-radius: 10px;
+    color: white;
+    border: 0;
+}
